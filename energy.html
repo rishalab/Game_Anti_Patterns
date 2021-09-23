@@ -1,0 +1,166 @@
+<!-------made by Vartika Agrahari (CS18M016)------------>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Catalogue of Game-Specific Anti-patterns</title>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<style>
+    .navbar {
+    	margin-bottom: 0;
+    	border-radius: 0;
+    	background-color: #5E4485;
+    	color: #FFF;
+    	padding:3% 0;
+    	font-size: 1.2em;
+    	border: 0;
+      text-align: left;
+    }
+    .navbar-brand {
+    	float: left;
+      font-size: 3em;
+    	min-height: 55px;
+    	padding: 15px 15px 15px;
+      color: #FFF;
+      text-align: left;
+    } 
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      background-color: #5E4485;
+      text-align: left;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #FFF;
+      text-align: left;
+    }
+    footer {
+      width: 100%;
+      background-color: #5E4485;
+      padding: 1% 0;
+      color: #FFF;
+      text-align: left;
+    } 
+    .txt {
+      color: #FFF;
+      font-size: 2em;
+    }
+  #grad1 {
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, teal , #0f4d92); /* Standard syntax (must be last) */
+} 
+    h1 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #000;
+      text-align: left;      
+    }
+    h2 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    h3 {
+      font-size: 1.50em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      color: #FFF;
+      text-align: left;
+    }
+    .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    @media (max-width: 900px) {
+     .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-caption{
+      display:none;
+      text-align: left;
+    }
+  }
+  .container {
+    font-size: 1.2em;
+    text-align: left;
+  }
+	</style>
+</head>
+<body>
+	<nav id="grad1" class="navbar navbar-inverse">
+		<div id="grad1" class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p class="txt">A Catalogue of Game-Specific Anti-patterns</p>
+			</div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a id="grad1" href="index.html">Home</a></li>
+          <li ><a id="grad1" href="docs.html">Documents</a></li>
+        </ul>
+      </div>
+		</div>
+	</nav>
+  <div class="container text-center">
+<h1>Avoid Energy Extensive Components</h1>
+<h4>(7 occurrences)</h4>
+<p>We considered the necessity of energy-efficiency in this category.</p>
+<h2>Context</h2>
+<p>Any game developed should be sustainable and energy-efficient and should consume optimized power [1]. Games must be designed in a way so that it fulfills all the functional and non-functional requirement along with minimum power usage.</p>
+<h2>Problem</h2>
+<p>More power consumption leads to faster power drainage.</p>
+<h2>Solution</h2>
+<p>Developers should avoid energy anti-patterns in game [2], and should utilize the process of sustainable software development [3].</p>
+<h2>Example</h2>
+<p>Consider a game where graphics and animation in games are active even after game over. This causes unnecessary power consumption. </p>
+<h3>References</h3>
+<p>[1] E. Capra, C. Francalanci, and S. A. Slaughter. Is software “green”? application development environments and energy efficiency in open source applications. Information and Software Technology, 54(1):60–71, 2012.</p>
+<p>[2] Cruz and R. Abreu. Catalog of energy patterns for mobile applications. Empirical Software Engineering, pages 1–27, 2019.</p>
+<p>[3] N. Amsel, Z. Ibrahim, A. Malik, and B. Tomlinson. Toward sustainable software engineering: Nier track. In 2011 33rd  international conference on software engineering (ICSE), pages 976–979. IEEE, 2011.</p>
+<h2>Occurrences</h2>
+
+  <div class="panel-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">Commits</div>
+      <div class="panel-body">6 occurrences</div>
+<ul>
+<li><a href="https://github.com/Zolmeister/avabranch/commit/3cb19f1c79bb528544c0f9820bf372a412bf081b">https://github.com/Zolmeister/avabranch/commit/3cb19f1c79bb528544c0f9820bf372a412bf081b
+</a></li><li><a href="https://github.com/Zolmeister/avabranch/commit/5b53763cdbb1f3506ba0582dd1ac5a23dd3a890d">https://github.com/Zolmeister/avabranch/commit/5b53763cdbb1f3506ba0582dd1ac5a23dd3a890d
+</a></li><li><a href="https://github.com/josegallegos07/game-off-2013/commit/a4d4e46bacbfc211f39f58d665dac54f57b5e688">
+https://github.com/josegallegos07/game-off-2013/commit/a4d4e46bacbfc211f39f58d665dac54f57b5e688
+</a></li><li><a href="https://github.com/Meridian59/Meridian59/commit/7928db5b4bccca8d58ed4ca1c15a6b918637d4eb">https://github.com/Meridian59/Meridian59/commit/7928db5b4bccca8d58ed4ca1c15a6b918637d4eb
+</a></li><li><a href="https://github.com/rishabhp/pappu-pakia/commit/4283d761e9aa2c789785d47b6dcea6b0f368caf6">https://github.com/rishabhp/pappu-pakia/commit/4283d761e9aa2c789785d47b6dcea6b0f368caf6
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/546675140b8fa975e954cb94b3324c802e4dbd89">https://github.com/Unvanquished/Unvanquished/commit/546675140b8fa975e954cb94b3324c802e4dbd89</a></li>
+
+</ul>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Issues</div>
+      <div class="panel-body">1 occurrence</div>
+      <ul>
+        <li><a href="https://github.com/KeenSoftwareHouse/SpaceEngineers/issues/580">https://github.com/KeenSoftwareHouse/SpaceEngineers/issues/580</a></li>
+      </ul>
+    </div>
+ </div>
+</div>
+</body>
+</html>

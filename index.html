@@ -1,0 +1,239 @@
+<!-------made by Vartika Agrahari (CS18M016)------------>
+<!---https://www.youtube.com/watch?v=eIWRbvE1B2E-------->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Catalogue of Game-Specific Anti-Patterns</title>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<style>
+    .navbar {
+    	margin-bottom: 0;
+    	border-radius: 0;
+    	background-color: #2E84D5;
+    	color: #FFF;
+    	padding:3% 0;
+    	font-size: 1.2em;
+    	border: 0;
+    }
+    .navbar-brand {
+    	float: right;
+      min-height: 55px;
+    	padding: 0px 15px;
+    } 
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      background-color: #2E84D5
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #D5D5C8;
+    }
+    footer {anti-patterns
+      width: 100%;
+      background-color: #2E84D5;
+      padding: 1% 0;
+      color: #FFF;
+    }
+    .txt {
+      color: #FFFFFF;
+      font-size: 2em;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      color: #FFF;
+    }
+#grad1 {
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, teal , #0f4d92); /* Standard syntax (must be last) */
+}
+    h1 {
+      font-size: 1.60em;
+      background-color: #FFF;
+      color: #000;
+      text-align: left;
+    }
+    p{
+
+    	text-align: left;
+    }
+h5{
+    	text-align: left;
+    }
+    ol{
+    	text-align: left;
+    }
+    ul{
+    	text-align: left;
+    }
+    a{
+    	text-align: left;
+    }
+     h3 {
+      font-size: 1.25em;
+      background-color: #2E84D5;
+     color: #FFF;
+      
+    }
+    .fa:hover {
+      color: #D5D5D5;
+      text-decoration: none;
+      }
+    @media (max-width: 900px) {
+     .fa:hover {
+      color: #D5D5D5;
+      text-decoration: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-caption{
+      display:none;
+    }
+  }
+	</style>
+</head>
+<body>
+	<nav id="grad1" class="navbar navbar-inverse">
+		<div id="grad1" class="container-fluid">
+			<div id="grad1" class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+      </div>
+		<div class="row">
+      <div class ="col-sm-10">
+		        <p class ="txt">A Catalogue of Game-Specific Anti-Patterns</p>
+	   </div>
+  </div>
+<h3 id="grad1" >We propose a catalogue of Game-Specific Anti-patterns here. We came up with this list by analyzing a total of 1185 text records constituting of the text data of 892 <i>commits</i>, 189 <i>issues</i>, and 104 <i>pull-requests</i> of 100 open source games mined from Github.</h3>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a id="grad1" href="index.html">Home</a></li>
+          <li ><a id="grad1" href="docs.html">Documents</a></li>
+        </ul>
+      </div>
+      </div>
+	</nav>
+    <div class="container text-center">
+  <div class="panel-group">
+  <div class="panel panel-info">
+    <div class="panel-body">          
+    	<h1>[1] Beware of Vague Inheritance from Game Engines/Frameworks</h1>
+          <h5>(65 occurrences)</h5>
+          <p>Nowadays, games are often developed using any framework or game engines which simplifies the task of game developers by providing a set of templates/modules which prevents them from developing the game from scratch. In the context of game, we name this dependency as:
+          	<ul >
+          		<li ><a href="Game_Engine.html">Beware of Vague Inheritance from Game Engines/Frameworks</a></li>
+        	</ul>
+          </p>
+      </div>
+  </div>
+  <div class="panel panel-info">
+    <div class="panel-body">          
+    	<h1>[2] Unwanted Movement of Game Objects</h1>
+           <h5>(63 occurrences)</h5>
+          <p>These are the bad practices which causes difficulties to the usability of game from a user perspective.
+           	<ul>
+          		<li ><a href="Unwanted_Movement_Of_Game_Obj.html">Unwanted Movement of Game Objects</a></li>
+        	</ul>
+
+          </p>
+      </div>
+  </div>
+  <div class="panel panel-info">
+    <div class="panel-body">          
+      <h1>[3] Minimum Game Controls With Maximum Game Functionality</h1>
+           <h5>(191 occurrences)</h5>
+          <p>Game controls are an important part of game playing and Anti-patterns related to that may affect the usability of game.
+            <ul>
+              <li ><a href="Game_Ctrls.html">Minimum Game controls with Maximum Game Functionality</a></li>
+          </ul>
+          </p>
+      </div>
+  </div>
+    <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[4] Avoid Wrong Logic/Invalid Moves</h1>
+           <h5>(200 occurrences)</h5>
+          <p>Design of game is one of the leading factor which decides the demand of game among users. Games containing invalid moves reflects bad game design.
+       	   	<ul>
+          		<li ><a href="Invalid_Moves.html">Avoid Wrong Logic/Invalid Moves</a></li>
+        	</ul>
+	      </p>
+        </div>
+      </div>
+  <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[5] User Interface Glitch</h1>
+           <h5>(403 occurrences)</h5>
+          <p>All the commits, issues and pull-requests which discusses about enhancement of user interface and problems faced by end users comes under this category.
+          	<ul >
+          		<li ><a href="UI_Design.html">User Interface Glitch</a></li>
+           	</ul>
+
+          </p>
+        </div>
+    </div>
+     <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[6] Be Cautious of Platform Dependency</h1>
+           <h5>(252 occurrences)</h5>
+          <p>Anti-patterns which affect the build of game are included in this category.
+       	 	<ul >
+          		<li ><a href="Platform.html">Be Cautious of Platform Dependency</a></li>
+           	</ul>
+          </p>
+        </div>
+    </div>
+     <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[7] Avoid Memory Leaks</h1>
+           <h5>(53 occurrences)</h5>
+          <p>Anti-patterns affecting the performance of games are categorized in this theme.
+          	<ul>
+          		<li ><a href="Memory_Related.html">Avoid Memory Leaks</a></li>
+           	</ul>
+          </p>
+        </div>
+      </div>
+    <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[8] Avoid Energy Extensive Components</h1>
+          <h5>(7 occurrences)</h5>
+          <p>Sustainable software development has become one of the key requirement of current era. Thus, we considered the necessity of energy-efficiency in this category. 
+          	<ul>
+          <li><a href="energy.html">Avoid Energy Extensive Components</a></li>
+      </ul>
+      </p>
+    </div>
+    </div>
+    <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[9] Provide Offline-Support</h1>
+          <h5>(6 occurrences)</h5>
+          <p>Offline-Support for browser-based games provide users' with extended usability. It enables the user to continue the gameplay even in the case of fluctuating internet connection, or any other disruption.
+          <ul>
+          		<li><a href="Offline_Support.html">Provide Offline-Support</a></li>
+          </ul>
+          </p>
+        </div>
+    </div>
+    <div class="panel panel-info">
+    <div class="panel-body">  
+          <h1>[10] Ensure Game Security</h1>
+          <h5>(9 occurrences)</h5>
+          <p>Security is one of the important factor needs to be considered in the context of game to protect user's identity and his/her game achievements. We include issues related to security in this category.
+          	<ul >
+          	<li><a href="Security_Issues.html">Ensure Game Security</a></li>
+          </ul>
+      </p>
+        </div>
+    </div>
+</body>
+</html>

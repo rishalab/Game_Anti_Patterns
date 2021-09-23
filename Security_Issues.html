@@ -1,0 +1,164 @@
+<!-------made by Vartika Agrahari (CS18M016)------------>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Catalogue of Game-Specific Anti-Patterns</title>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<style>
+    .navbar {
+    	margin-bottom: 0;
+    	border-radius: 0;
+    	background-color: #5E4485;
+    	color: #FFF;
+    	padding:3% 0;
+    	font-size: 1.2em;
+    	border: 0;
+      text-align: left;
+    }
+    .navbar-brand {
+    	float: left;
+      font-size: 3em;
+    	min-height: 55px;
+    	padding: 15px 15px 15px;
+      color: #FFF;
+      text-align: left;
+    } 
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      background-color: #5E4485;
+      text-align: left;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #FFF;
+      text-align: left;
+    }
+    footer {
+      width: 100%;
+      background-color: #5E4485;
+      padding: 1% 0;
+      color: #FFF;
+      text-align: left;
+    } 
+    .txt {
+      color: #FFF;
+      font-size: 2em;
+    }
+    h1 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #000;
+      text-align: left;      
+    }
+    #grad1 {
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, teal , #0f4d92); /* Standard syntax (must be last) */
+} 
+    h2 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    h3 {
+      font-size: 1.50em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      color: #FFF;
+      text-align: left;
+    }
+    .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    @media (max-width: 900px) {
+     .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-caption{
+      display:none;
+      text-align: left;
+    }
+  }
+  .container {
+    font-size: 1.2em;
+    text-align: left;
+  }
+	</style>
+</head>
+<body>
+	<nav id="grad1" class="navbar navbar-inverse">
+		<div id="grad1" class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p class="txt">A Catalogue of Game-Specific Anti-Patterns</p>
+			</div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a id="grad1" href="index.html">Home</a></li>
+          <li ><a id="grad1" href="docs.html">Documents</a></li>
+        </ul>
+      </div>
+		</div>
+	</nav>
+  <div class="container text-center">
+<h1>Ensure Game Security</h1>
+<h4>(9 occurrences)</h4>
+<p>We include issues related too security in this category.</p>
+<h2>Context</h2>
+<p>Security plays an important role in game play. It ensures that untrusted clients does not intrude into game.</p>
+<h2>Problem</h2>
+<p>Untrusted players can become threat to security of game. Players often use cheat codes to bypass the levels of game which hampers the game dignity.</p>
+<h2>Solution</h2>
+<p>Developers should ensure that there is proper channel of authentication for players that checks for insecure passwords, multiple logins, sniffed passwords and so on. Also, developers should follow all the heuristics related to security issues in games [1].</p>
+<h2>Example</h2>
+<p>Consider an online multiplayer game, where a player tries to login through multiple devices at the same time to increase the his odds of winning the game.</p>
+<h3>Reference</h3>
+<p>[1] J. Yan and H.-J. Choi. Security issues in online games. The Electronic Library, 2002.</p>
+<h2>Occurrences</h2>
+
+  <div class="panel-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">Commits</div>
+      <div class="panel-body">6 occurrences</div>
+<ul>
+<li><a href="https://github.com/freeciv/freeciv-web/commit/564abd3e1dbfc88932e3885cbaf657c01aed7d41">https://github.com/freeciv/freeciv-web/commit/564abd3e1dbfc88932e3885cbaf657c01aed7d41
+</a></li><li><a href="https://github.com/freeciv/freeciv-web/commit/c75d9857316c2f3c01a05e0e8318881d00ba044c">https://github.com/freeciv/freeciv-web/commit/c75d9857316c2f3c01a05e0e8318881d00ba044c
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/commit/f57135a8837ec1e908dfff8c3cc8347feddf1a35">https://github.com/RigsOfRods/rigs-of-rods/commit/f57135a8837ec1e908dfff8c3cc8347feddf1a35
+</a></li><li><a href="https://github.com/teeworlds/teeworlds/commit/1f0b2f6ee50e50a8bfd5b70f39f1368a06e03d3c">https://github.com/teeworlds/teeworlds/commit/1f0b2f6ee50e50a8bfd5b70f39f1368a06e03d3c
+</a></li><li><a href="https://github.com/AlexNisnevich/untrusted/commit/e0f55530b56b1bb9032e7f29e476887d28af0b17">https://github.com/AlexNisnevich/untrusted/commit/e0f55530b56b1bb9032e7f29e476887d28af0b17
+</a></li><li><a href="https://github.com/AlexNisnevich/untrusted/commit/7868bc97568ad6ee632c73127584b46b82b4e139">https://github.com/AlexNisnevich/untrusted/commit/7868bc97568ad6ee632c73127584b46b82b4e139</a></li>
+</ul>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Issues</div>
+      <div class="panel-body">3 occurrences</div>
+      <ul>
+<li><a href="https://github.com/particle-clicker/particle-clicker/issues/67">https://github.com/particle-clicker/particle-clicker/issues/67
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/issues/2487">https://github.com/RigsOfRods/rigs-of-rods/issues/2487
+</a></li><li><a href="https://github.com/jfd/wpilot/issues/17">https://github.com/jfd/wpilot/issues/17</a></li>
+</ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

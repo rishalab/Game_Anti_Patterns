@@ -1,0 +1,354 @@
+<!-------made by Vartika Agrahari (CS18M016)------------>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Catalogue of Game-Specific Anti-Patterns</title>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<style>
+    .navbar {
+    	margin-bottom: 0;
+    	border-radius: 0;
+    	background-color: #5E4485;
+    	color: #FFF;
+    	padding:3% 0;
+    	font-size: 1.2em;
+    	border: 0;
+      text-align: left;
+    }
+    .navbar-brand {
+    	float: left;
+      font-size: 3em;
+    	min-height: 55px;
+    	padding: 15px 15px 15px;
+      color: #FFF;
+      text-align: left;
+    } 
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      background-color: #5E4485;
+      text-align: left;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #FFF;
+      text-align: left;
+    }
+    footer {
+      width: 100%;
+      background-color: #5E4485;
+      padding: 1% 0;
+      color: #FFF;
+      text-align: left;
+    }
+  #grad1 {
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, teal , #0f4d92); /* Standard syntax (must be last) */
+} 
+    .txt {
+      color: #FFF;
+      font-size: 2em;
+    }
+    h1 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #000;
+      text-align: left;      
+    }
+    h2 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    h3 {
+      font-size: 1.50em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      color: #FFF;
+      text-align: left;
+    }
+    .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    @media (max-width: 900px) {
+     .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-caption{
+      display:none;
+      text-align: left;
+    }
+  }
+  .container {
+    font-size: 1.2em;
+    text-align: left;
+  }
+	</style>
+</head>
+<body>
+	<nav id="grad1" class="navbar navbar-inverse">
+		<div id="grad1" class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p class="txt">A Catalogue of Game-Specific Anti-Patterns</p>
+			</div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a id="grad1" href="index.html">Home</a></li>
+          <li ><a id="grad1" href="docs.html">Documents</a></li>
+        </ul>
+      </div>
+		</div>
+	</nav>
+  <div class="container text-center">
+<h1>Minimum Game Controls with Maximum Game Functionality</h1>
+<h4>(191 occurrences)</h4>
+<p>Game control actions involving mouse, keyboard, joystick, and other devices, should be smooth and the action should be optimized as it increase the usability of game [1].</p>
+<h2>Context</h2>
+<p>Game control is an integral part of game play. Having effective, smooth and minimized movements of various devices increases the usability of game.</p>
+<h2>Problem</h2>
+<p> Rough and faulty game controls can have negative impact on usability factor.</p>
+<h2>Solution</h2>
+<p>Provide game with minimum mouse scrolls, keyboard button, and other devices. Optimized game actions along with smooth game controls increases hassle free game play.</p>
+<h2>Example</h2>
+<p> In the case of point and click game, there should not be any action related to keyboard or any other device, as it causes unnecessary control movements for player.</p>
+<h3>Reference</h3>
+<p>[1] Korhonen and E. M. Koivisto. Playability heuristics for mobile games. In Proceedings of the 8th conference on Human-computer interaction with mobile devices and services, pages 9–16, 2006.</p>
+<h2>Occurrences</h2>
+
+  <div class="panel-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">Commits</div>
+      <div class="panel-body">159 occurrences</div>
+      <ul>
+<li><a href="https://github.com/gabrielecirulli/2048/commit/5c6327f390309e446eb3a98f1389333af0d3905e">https://github.com/gabrielecirulli/2048/commit/5c6327f390309e446eb3a98f1389333af0d3905e
+</a></li><li><a href="https://github.com/0ad/0ad/commit/60a1bed0bb40f9dcb794a97d0a9bec320839c1e4">https://github.com/0ad/0ad/commit/60a1bed0bb40f9dcb794a97d0a9bec320839c1e4
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/189af75c31e48aa1ac484fc1b3a71af034ee8adf">https://github.com/doublespeakgames/adarkroom/commit/189af75c31e48aa1ac484fc1b3a71af034ee8adf
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/94fdcc7463b4dafe7347318aa6065f4e3475b98a">https://github.com/doublespeakgames/adarkroom/commit/94fdcc7463b4dafe7347318aa6065f4e3475b98a
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/e9679b3f26c3f987368a12e921c91e4cffe3e91a">https://github.com/doublespeakgames/adarkroom/commit/e9679b3f26c3f987368a12e921c91e4cffe3e91a
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/d0a171e95bcaffc4aacccd6f352d5e982deadf27">https://github.com/doublespeakgames/adarkroom/commit/d0a171e95bcaffc4aacccd6f352d5e982deadf27
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/6561e88f9f9d0066e296b223dfb6207d61e692fb">https://github.com/doublespeakgames/adarkroom/commit/6561e88f9f9d0066e296b223dfb6207d61e692fb
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/ebf5e6934e456d77e4ffe7bef1a7cb16e85d8929">https://github.com/doublespeakgames/adarkroom/commit/ebf5e6934e456d77e4ffe7bef1a7cb16e85d8929
+</a></li><li><a href="https://github.com/Zolmeister/avabranch/commit/2c16c795b7bfacc0c9475020ed8bf67e6d5ab5c2">https://github.com/Zolmeister/avabranch/commit/2c16c795b7bfacc0c9475020ed8bf67e6d5ab5c2
+</a></li><li><a href="https://github.com/kripken/BananaBread/commit/05d1eb7f4211081c68740976befd2e3bdb9ad1c6">https://github.com/kripken/BananaBread/commit/05d1eb7f4211081c68740976befd2e3bdb9ad1c6
+</a></li><li><a href="https://github.com/lpinca/binb/commit/9f91be141ae482c7a46fdcff3cb1da7f9cbb31e5">https://github.com/lpinca/binb/commit/9f91be141ae482c7a46fdcff3cb1da7f9cbb31e5
+</a></li><li><a href="https://github.com/lpinca/binb/commit/6e80c8dc4ffb516d34d20e90a9b1a60ecf7810e2">https://github.com/lpinca/binb/commit/6e80c8dc4ffb516d34d20e90a9b1a60ecf7810e2
+</a></li><li><a href="https://github.com/Aerolab/blockrain.js/commit/4dd3d1b09d22ab994b75ed5cbf32a5362b0bee67">https://github.com/Aerolab/blockrain.js/commit/4dd3d1b09d22ab994b75ed5cbf32a5362b0bee67
+</a></li><li><a href="https://github.com/Aerolab/blockrain.js/commit/b2886882c079ccf8b96b1c371ae40cef247442cb">https://github.com/Aerolab/blockrain.js/commit/b2886882c079ccf8b96b1c371ae40cef247442cb
+</a></li><li><a href="https://github.com/Couchfriends/breakout/commit/75807ddfc87306f88619370172a82e6eb2edc8d1">https://github.com/Couchfriends/breakout/commit/75807ddfc87306f88619370172a82e6eb2edc8d1
+</a></li><li><a href="https://github.com/CleverRaven/Cataclysm-DDA/commit/4b40129cc90906616295ccbc5e8f24dcfa9b27fe">https://github.com/CleverRaven/Cataclysm-DDA/commit/4b40129cc90906616295ccbc5e8f24dcfa9b27fe
+</a></li><li><a href="https://github.com/CleverRaven/Cataclysm-DDA/commit/68ff1a3ad3261483479586c0dd0e05d98180b499">https://github.com/CleverRaven/Cataclysm-DDA/commit/68ff1a3ad3261483479586c0dd0e05d98180b499
+</a></li><li><a href="https://github.com/CleverRaven/Cataclysm-DDA/commit/dfe44a4f65f985bc0687150779bf3f0504b3be25">https://github.com/CleverRaven/Cataclysm-DDA/commit/dfe44a4f65f985bc0687150779bf3f0504b3be25
+</a></li><li><a href="https://github.com/CleverRaven/Cataclysm-DDA/commit/4f5e12ba8c3347e8248c2359e1acfa288bbe9fe6">https://github.com/CleverRaven/Cataclysm-DDA/commit/4f5e12ba8c3347e8248c2359e1acfa288bbe9fe6
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/487ac15a46f3ffbef0e0fb3ba0e428292010f44f">https://github.com/tizian/Cendric2/commit/487ac15a46f3ffbef0e0fb3ba0e428292010f44f
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/2fa51f1a3d7f4acda0b5262bf2617fa6d3c448bb">https://github.com/tizian/Cendric2/commit/2fa51f1a3d7f4acda0b5262bf2617fa6d3c448bb
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/def0949c16713e3affbff806acde034f3f610e0c">https://github.com/tizian/Cendric2/commit/def0949c16713e3affbff806acde034f3f610e0c
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/680d38b98612c0f09d04263f796827732bb58acd">https://github.com/tizian/Cendric2/commit/680d38b98612c0f09d04263f796827732bb58acd
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/b01e86beb146a2927f756d652fcce9f330b203e5">https://github.com/tizian/Cendric2/commit/b01e86beb146a2927f756d652fcce9f330b203e5
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/65bf26feb407a7351118a9e1a4302b015e82423b">https://github.com/tizian/Cendric2/commit/65bf26feb407a7351118a9e1a4302b015e82423b
+</a></li><li><a href="https://github.com/tizian/Cendric2/commit/a996f132b163efdd882875b73176aa2d6227db59">https://github.com/tizian/Cendric2/commit/a996f132b163efdd882875b73176aa2d6227db59
+</a></li><li><a href="https://github.com/mjhasbach/ceros-snake/commit/6c56ef4b5c7221bda56611a8c0cdcee63c016166">https://github.com/mjhasbach/ceros-snake/commit/6c56ef4b5c7221bda56611a8c0cdcee63c016166
+</a></li><li><a href="https://github.com/mjhasbach/ceros-snake/commit/cc4a0d961e675f64c2ad7ed402ebc3a8244e7a78">https://github.com/mjhasbach/ceros-snake/commit/cc4a0d961e675f64c2ad7ed402ebc3a8244e7a78
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/3fffb788b241b7baa4247c1e630d83a7210ddc2e">https://github.com/WinterLicht/Chaos-Projectile/commit/3fffb788b241b7baa4247c1e630d83a7210ddc2e
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/2892a7c464c1a465e4a310c3af6307f2a64cffa2">https://github.com/WinterLicht/Chaos-Projectile/commit/2892a7c464c1a465e4a310c3af6307f2a64cffa2
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/7bc2dc5e6bb6beca5c04035480e22c804a04aae8">https://github.com/WinterLicht/Chaos-Projectile/commit/7bc2dc5e6bb6beca5c04035480e22c804a04aae8
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/44bc7bc9a237144a15507ad36318daaad5216f38">https://github.com/WinterLicht/Chaos-Projectile/commit/44bc7bc9a237144a15507ad36318daaad5216f38
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/838051165e0c7431c8e3536eba5aa9e5f32bddcc">https://github.com/WinterLicht/Chaos-Projectile/commit/838051165e0c7431c8e3536eba5aa9e5f32bddcc
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/ae864a66464aa58db0cc5cfaed4f9d9e5f6d1882">https://github.com/WinterLicht/Chaos-Projectile/commit/ae864a66464aa58db0cc5cfaed4f9d9e5f6d1882
+</a></li><li><a href="https://github.com/WinterLicht/Chaos-Projectile/commit/ac9c0a32041945730cdfd04a398a2667d8a43f21">https://github.com/WinterLicht/Chaos-Projectile/commit/ac9c0a32041945730cdfd04a398a2667d8a43f21
+</a></li><li><a href="https://github.com/ellisonleao/clumsy-bird/commit/75959f5a7ebc86e1ab73870dd85e9b5916dd6577">https://github.com/ellisonleao/clumsy-bird/commit/75959f5a7ebc86e1ab73870dd85e9b5916dd6577
+</a></li><li><a href="https://github.com/ellisonleao/clumsy-bird/commit/7e2c512260b7b473ad3a09dcf60043742448f890">https://github.com/ellisonleao/clumsy-bird/commit/7e2c512260b7b473ad3a09dcf60043742448f890
+</a></li><li><a href="https://github.com/colobot/colobot/commit/32d3d1eb924cc89b3cfdd1a729a04e0be96af296">https://github.com/colobot/colobot/commit/32d3d1eb924cc89b3cfdd1a729a04e0be96af296
+</a></li><li><a href="https://github.com/colobot/colobot/commit/d63ed865f48f9fa8695af731f0f3a46e4fa1b259">https://github.com/colobot/colobot/commit/d63ed865f48f9fa8695af731f0f3a46e4fa1b259
+</a></li><li><a href="https://github.com/colobot/colobot/commit/bd72086704a6b61222a9708b848875585d84ae4e">https://github.com/colobot/colobot/commit/bd72086704a6b61222a9708b848875585d84ae4e
+</a></li><li><a href="https://github.com/fogleman/Craft/commit/0676cabe1811903936a2e41b7a84b5bf1f69e222">https://github.com/fogleman/Craft/commit/0676cabe1811903936a2e41b7a84b5bf1f69e222
+</a></li><li><a href="https://github.com/fogleman/Craft/commit/cee92585b8d7f99dc19b3b8057c7571abe9e5b39">https://github.com/fogleman/Craft/commit/cee92585b8d7f99dc19b3b8057c7571abe9e5b39
+</a></li><li><a href="https://github.com/paulbatum/Dominion/commit/2ef6a5d36303713eaf9eb5855db22cc5b62f07df">https://github.com/paulbatum/Dominion/commit/2ef6a5d36303713eaf9eb5855db22cc5b62f07df
+</a></li><li><a href="https://github.com/akien-mga/dynadungeons/commit/b0abdc920491cec44b3fdb822dfa29346eaed06c">https://github.com/akien-mga/dynadungeons/commit/b0abdc920491cec44b3fdb822dfa29346eaed06c
+</a></li><li><a href="https://github.com/akien-mga/dynadungeons/commit/c8fb46fa341a585e31216c85ceb0e4673f92f02c">https://github.com/akien-mga/dynadungeons/commit/c8fb46fa341a585e31216c85ceb0e4673f92f02c
+</a></li><li><a href="https://github.com/endless-sky/endless-sky/commit/f0251dabfde09d62f9c19b4388b729f7437275b5">https://github.com/endless-sky/endless-sky/commit/f0251dabfde09d62f9c19b4388b729f7437275b5
+</a></li><li><a href="https://github.com/endless-sky/endless-sky/commit/00b6a9c10c4e1087b859db0daa2898f423c1a500">https://github.com/endless-sky/endless-sky/commit/00b6a9c10c4e1087b859db0daa2898f423c1a500
+</a></li><li><a href="https://github.com/endless-sky/endless-sky/commit/6c8e3e132a13d03b7997a808b0eb7171afa3a290">https://github.com/endless-sky/endless-sky/commit/6c8e3e132a13d03b7997a808b0eb7171afa3a290
+</a></li><li><a href="https://github.com/endless-sky/endless-sky/commit/96e2b53b5c83ca5715411fb7d9d8b22fe4f16454">https://github.com/endless-sky/endless-sky/commit/96e2b53b5c83ca5715411fb7d9d8b22fe4f16454
+</a></li><li><a href="https://github.com/wheybags/freeablo/commit/311e2949e24db6a6c2a0f335c95b7b2c7bcf94b7">https://github.com/wheybags/freeablo/commit/311e2949e24db6a6c2a0f335c95b7b2c7bcf94b7
+</a></li><li><a href="https://github.com/wheybags/freeablo/commit/d7b5b918b212c4df6290ebfcf6a96ee102255007">https://github.com/wheybags/freeablo/commit/d7b5b918b212c4df6290ebfcf6a96ee102255007
+</a></li><li><a href="https://github.com/freeciv/freeciv-web/commit/901818362146b06c78550e95d1179a1eda144364">https://github.com/freeciv/freeciv-web/commit/901818362146b06c78550e95d1179a1eda144364
+</a></li><li><a href="https://github.com/freeciv/freeciv-web/commit/8e69a017a7068b45ceb4df4d99c0ffdd13a5fe9c">https://github.com/freeciv/freeciv-web/commit/8e69a017a7068b45ceb4df4d99c0ffdd13a5fe9c
+</a></li><li><a href="https://github.com/David20321/FTJ/commit/674f02bd6ff04aec399968779a97eab612fe6827">https://github.com/David20321/FTJ/commit/674f02bd6ff04aec399968779a97eab612fe6827
+</a></li><li><a href="https://github.com/Dave-and-Mike/game-off-2012/commit/e1068303d98da155a9a0524030485c74baf4711b">https://github.com/Dave-and-Mike/game-off-2012/commit/e1068303d98da155a9a0524030485c74baf4711b
+</a></li><li><a href="https://github.com/Dave-and-Mike/game-off-2012/commit/98f4884960042fcfa6b8ba20273531d307555268">https://github.com/Dave-and-Mike/game-off-2012/commit/98f4884960042fcfa6b8ba20273531d307555268
+</a></li><li><a href="https://github.com/josegallegos07/game-off-2013/commit/fa23b0f734d3f98379514f20f41254442ca27f85">https://github.com/josegallegos07/game-off-2013/commit/fa23b0f734d3f98379514f20f41254442ca27f85
+</a></li><li><a href="https://github.com/josegallegos07/game-off-2013/commit/d39f9c035997b482ca91609da4e7af82009a2b95">https://github.com/josegallegos07/game-off-2013/commit/d39f9c035997b482ca91609da4e7af82009a2b95
+</a></li><li><a href="https://github.com/antionio/game-off-2013/commit/d01bd6bf12653253b382649beda425018c372c40">https://github.com/antionio/game-off-2013/commit/d01bd6bf12653253b382649beda425018c372c40
+</a></li><li><a href="https://github.com/hawkthorne/hawkthorne-journey/commit/85b4552bb3d4e2d09896f3a5a3b3c7891ec60aa2">https://github.com/hawkthorne/hawkthorne-journey/commit/85b4552bb3d4e2d09896f3a5a3b3c7891ec60aa2
+</a></li><li><a href="https://github.com/hawkthorne/hawkthorne-journey/commit/59dd1d65af9d16a87c077f090578f5520d2e562f">https://github.com/hawkthorne/hawkthorne-journey/commit/59dd1d65af9d16a87c077f090578f5520d2e562f
+</a></li><li><a href="https://github.com/hawkthorne/hawkthorne-journey/commit/1365e01bc49b3879fc2b6f71e63448ad54397bfa">https://github.com/hawkthorne/hawkthorne-journey/commit/1365e01bc49b3879fc2b6f71e63448ad54397bfa
+</a></li><li><a href="https://github.com/hawkthorne/hawkthorne-journey/commit/d6e47926fa6863d235fc6aa421ee41ac3fc31915">https://github.com/hawkthorne/hawkthorne-journey/commit/d6e47926fa6863d235fc6aa421ee41ac3fc31915
+</a></li><li><a href="https://github.com/hawkthorne/hawkthorne-journey/commit/e052a4242002f5933aceff58038a411db73a6606">https://github.com/hawkthorne/hawkthorne-journey/commit/e052a4242002f5933aceff58038a411db73a6606
+</a></li><li><a href="https://github.com/BKcore/HexGL/commit/27c4b94d382f99ee910a5cbf938a8f24f29c179d">https://github.com/BKcore/HexGL/commit/27c4b94d382f99ee910a5cbf938a8f24f29c179d
+</a></li><li><a href="https://github.com/BKcore/HexGL/commit/6dbafa40478d7cb2ad67ffbe37081f3f91a94abf">https://github.com/BKcore/HexGL/commit/6dbafa40478d7cb2ad67ffbe37081f3f91a94abf
+</a></li><li><a href="https://github.com/BKcore/HexGL/commit/9214a94f81482a2ec3528f89c8dc2a9ae2f3b47f">https://github.com/BKcore/HexGL/commit/9214a94f81482a2ec3528f89c8dc2a9ae2f3b47f
+</a></li><li><a href="https://github.com/LucKeyProductions/heXon/commit/b045713e7264052fd5a06d3953768c93638b16d4">https://github.com/LucKeyProductions/heXon/commit/b045713e7264052fd5a06d3953768c93638b16d4
+</a></li><li><a href="https://github.com/LucKeyProductions/heXon/commit/61bab8dcb1c88d95ee85a78f484dbd23485f6810">https://github.com/LucKeyProductions/heXon/commit/61bab8dcb1c88d95ee85a78f484dbd23485f6810
+</a></li><li><a href="https://github.com/LucKeyProductions/heXon/commit/a5533de55aae2f98ecb0dbe465db653d419ee2e0">https://github.com/LucKeyProductions/heXon/commit/a5533de55aae2f98ecb0dbe465db653d419ee2e0
+</a></li><li><a href="https://github.com/dmcinnes/HTML5-Asteroids/commit/83aee8322692b8c118eda2de8e44b0c3cafa0e34">https://github.com/dmcinnes/HTML5-Asteroids/commit/83aee8322692b8c118eda2de8e44b0c3cafa0e34
+</a></li><li><a href="https://github.com/ioquake/ioq3/commit/699cbed7c76bce82191ad5c3b3d5a68b9f5c64dd">https://github.com/ioquake/ioq3/commit/699cbed7c76bce82191ad5c3b3d5a68b9f5c64dd
+</a></li><li><a href="https://github.com/ornicar/lila/commit/a024ead25f3874c68b580ce200d220c419394a5f">https://github.com/ornicar/lila/commit/a024ead25f3874c68b580ce200d220c419394a5f
+</a></li><li><a href="https://github.com/fogleman/Minecraft/commit/a81e11aaa49aac578b572935a19938fd2e4af48c">https://github.com/fogleman/Minecraft/commit/a81e11aaa49aac578b572935a19938fd2e4af48c
+</a></li><li><a href="https://github.com/minetest/minetest/commit/ee7d35760242824fd6b00a6ab1d9a2e6e5873d2c">https://github.com/minetest/minetest/commit/ee7d35760242824fd6b00a6ab1d9a2e6e5873d2c
+</a></li><li><a href="https://github.com/minetest/minetest/commit/37f771a95bd54e2072f07783df142da4a91e7bff">https://github.com/minetest/minetest/commit/37f771a95bd54e2072f07783df142da4a91e7bff
+</a></li><li><a href="https://github.com/minetest/minetest/commit/4f7674d448abb9f12030c743a1a6a0d3ad07ad7c">https://github.com/minetest/minetest/commit/4f7674d448abb9f12030c743a1a6a0d3ad07ad7c
+</a></li><li><a href="https://github.com/devnewton/newton_adventure/commit/b8e5d98c955fe5dcac012d57eb4037e0d38d4339">https://github.com/devnewton/newton_adventure/commit/b8e5d98c955fe5dcac012d57eb4037e0d38d4339
+</a></li><li><a href="https://github.com/devnewton/newton_adventure/commit/5c38356e5b77de76baa7c6dcfa80e531c6a9ff94">https://github.com/devnewton/newton_adventure/commit/5c38356e5b77de76baa7c6dcfa80e531c6a9ff94
+</a></li><li><a href="https://github.com/lostdecade/onslaught_arena/commit/9e8735051bd6c03af46230b1689286b049e349c0">https://github.com/lostdecade/onslaught_arena/commit/9e8735051bd6c03af46230b1689286b049e349c0
+</a></li><li><a href="https://github.com/lostdecade/onslaught_arena/commit/9d740f6a64cc4271d9142af4979068a6d919eefd">https://github.com/lostdecade/onslaught_arena/commit/9d740f6a64cc4271d9142af4979068a6d919eefd
+</a></li><li><a href="https://github.com/lostdecade/onslaught_arena/commit/cbee0a4ea78a7850a06c028160cad845770d8453">https://github.com/lostdecade/onslaught_arena/commit/cbee0a4ea78a7850a06c028160cad845770d8453
+</a></li><li><a href="https://github.com/lostdecade/onslaught_arena/commit/86b6a61ad01929d13715e901f00c54ecd8080ec0">https://github.com/lostdecade/onslaught_arena/commit/86b6a61ad01929d13715e901f00c54ecd8080ec0
+</a></li><li><a href="https://github.com/SFTtech/openage/commit/c5063c66fb2639106970d5ba3def9be511aca8fa">https://github.com/SFTtech/openage/commit/c5063c66fb2639106970d5ba3def9be511aca8fa
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/daee581e7f68ceea45476b9b1310473ec154741e">https://github.com/XProger/OpenLara/commit/daee581e7f68ceea45476b9b1310473ec154741e
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/3850dee839b4eca7cd28d95abbb8b1c5c69b7a2e">https://github.com/XProger/OpenLara/commit/3850dee839b4eca7cd28d95abbb8b1c5c69b7a2e
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/b1897e630b015a14df35b72fce01cf6d78feb6c6">https://github.com/XProger/OpenLara/commit/b1897e630b015a14df35b72fce01cf6d78feb6c6
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/f2bcbd341df0e44d002454b2052864b540c318c9">https://github.com/XProger/OpenLara/commit/f2bcbd341df0e44d002454b2052864b540c318c9
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/9ffa678b69b5b5b582bbdc7f22887a07853bbc48">https://github.com/XProger/OpenLara/commit/9ffa678b69b5b5b582bbdc7f22887a07853bbc48
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/77f205f9763c18b18c6f42ac1c43a60ef7d0b9da">https://github.com/XProger/OpenLara/commit/77f205f9763c18b18c6f42ac1c43a60ef7d0b9da
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/5b48ad1453782c48f25ec58c66b4672a3b2a2862">https://github.com/XProger/OpenLara/commit/5b48ad1453782c48f25ec58c66b4672a3b2a2862
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/c6d409f860ff5b98e2bcb8e7c06268985251943d">https://github.com/XProger/OpenLara/commit/c6d409f860ff5b98e2bcb8e7c06268985251943d
+</a></li><li><a href="https://github.com/XProger/OpenLara/commit/3fdc211f996937c8c42d97e88beb6d538496473d">https://github.com/XProger/OpenLara/commit/3fdc211f996937c8c42d97e88beb6d538496473d
+</a></li><li><a href="https://github.com/OpenMW/openmw/commit/7b5ec76db4e89fca7a7b652ea4d830edacde573a">https://github.com/OpenMW/openmw/commit/7b5ec76db4e89fca7a7b652ea4d830edacde573a
+</a></li><li><a href="https://github.com/OpenMW/openmw/commit/8bfca9830f86f62165df7d3f59f8af6797ca50c9">https://github.com/OpenMW/openmw/commit/8bfca9830f86f62165df7d3f59f8af6797ca50c9
+</a></li><li><a href="https://github.com/OpenMW/openmw/commit/ec9a593fc326a8fd261faec7e44790e2dd4d3a79">https://github.com/OpenMW/openmw/commit/ec9a593fc326a8fd261faec7e44790e2dd4d3a79
+</a></li><li><a href="https://github.com/OpenMW/openmw/commit/626e943c43af44bfe742ec350b7e939eff09ca60">https://github.com/OpenMW/openmw/commit/626e943c43af44bfe742ec350b7e939eff09ca60
+</a></li><li><a href="https://github.com/yvt/openspades/commit/3143e561c00b3a0daa111292887eed7b5a47ead2">https://github.com/yvt/openspades/commit/3143e561c00b3a0daa111292887eed7b5a47ead2
+</a></li><li><a href="https://github.com/yvt/openspades/commit/27d9320476aa17d321399216fd3c9be2cad86c89">https://github.com/yvt/openspades/commit/27d9320476aa17d321399216fd3c9be2cad86c89
+</a></li><li><a href="https://github.com/yvt/openspades/commit/4bd819adcd532b233d50e4c9514733099a606fb2">https://github.com/yvt/openspades/commit/4bd819adcd532b233d50e4c9514733099a606fb2
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/7a55416d1b9503b93d7b1f37b54f4c18897fb60f">https://github.com/opentomb/OpenTomb/commit/7a55416d1b9503b93d7b1f37b54f4c18897fb60f
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/fc5a07a1090b83c7dbcff1b0db29d0948d66372c">https://github.com/opentomb/OpenTomb/commit/fc5a07a1090b83c7dbcff1b0db29d0948d66372c
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/1be01bb56ecc3c46b8b11a68c0d009272e876c2a">https://github.com/opentomb/OpenTomb/commit/1be01bb56ecc3c46b8b11a68c0d009272e876c2a
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/349eec5c432fa9e8116debbf2e4de5a2861786e9">https://github.com/opentomb/OpenTomb/commit/349eec5c432fa9e8116debbf2e4de5a2861786e9
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/7ee1abe009f8c952ce5d5b6448992a641c68441d">https://github.com/opentomb/OpenTomb/commit/7ee1abe009f8c952ce5d5b6448992a641c68441d
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/04068396215e18844ad9f7166001725a04410176">https://github.com/opentomb/OpenTomb/commit/04068396215e18844ad9f7166001725a04410176
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/e59163e88b81b9e01097b078833d558ce1fbc7c5">https://github.com/opentomb/OpenTomb/commit/e59163e88b81b9e01097b078833d558ce1fbc7c5
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/3873406ddafc9ac6cf71bced9cf9f1eb754e64e5">https://github.com/opentomb/OpenTomb/commit/3873406ddafc9ac6cf71bced9cf9f1eb754e64e5
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/bdc5467b0348eb0ae41bb689c8936ad89062bb8d">https://github.com/opentomb/OpenTomb/commit/bdc5467b0348eb0ae41bb689c8936ad89062bb8d
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/1b6037b954246dcfa8cb4f5d092e4b0b0fcbef80">https://github.com/opentomb/OpenTomb/commit/1b6037b954246dcfa8cb4f5d092e4b0b0fcbef80
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/d68e34a933827e89d33564028992a9156e13893f">https://github.com/opentomb/OpenTomb/commit/d68e34a933827e89d33564028992a9156e13893f
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/d2a83e3c27f4c392fcf60d84a2f94f302afbd024">https://github.com/opentomb/OpenTomb/commit/d2a83e3c27f4c392fcf60d84a2f94f302afbd024
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/eb97bd8f947d4dcfad77998290f15a89c94250b2">https://github.com/opentomb/OpenTomb/commit/eb97bd8f947d4dcfad77998290f15a89c94250b2
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/3d3a8e9400846b9b07cad4e72e7e79ab61975089">https://github.com/opentomb/OpenTomb/commit/3d3a8e9400846b9b07cad4e72e7e79ab61975089
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/e6b1d41d4c57c309c126927338b021921f44a091">https://github.com/opentomb/OpenTomb/commit/e6b1d41d4c57c309c126927338b021921f44a091
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/a1fa6bcc696f3484667c98a5ca15086f1a034515">https://github.com/opentomb/OpenTomb/commit/a1fa6bcc696f3484667c98a5ca15086f1a034515
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/9569228831b63f8c8540357b2175832439132b69">https://github.com/opentomb/OpenTomb/commit/9569228831b63f8c8540357b2175832439132b69
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/9e82eb9e17b45b790dae285c4c5696bc1befe88e">https://github.com/opentomb/OpenTomb/commit/9e82eb9e17b45b790dae285c4c5696bc1befe88e
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/81919162519f5e8e1153d02d9193528839e15e72">https://github.com/opentomb/OpenTomb/commit/81919162519f5e8e1153d02d9193528839e15e72
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/770b5d1420367c7743d0178fb15a7e81bafe9f65">https://github.com/opentomb/OpenTomb/commit/770b5d1420367c7743d0178fb15a7e81bafe9f65
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/58e81b7c9234203c6be33ef3a8b90cdd7fbfbd42">https://github.com/opentomb/OpenTomb/commit/58e81b7c9234203c6be33ef3a8b90cdd7fbfbd42
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/1ada10e7fb2221c8e21d84ea64ddf103d4eea6f3">https://github.com/opentomb/OpenTomb/commit/1ada10e7fb2221c8e21d84ea64ddf103d4eea6f3
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/80d49e90ffb985df1903617d2291cd841d66ddfe">https://github.com/opentomb/OpenTomb/commit/80d49e90ffb985df1903617d2291cd841d66ddfe
+</a></li><li><a href="https://github.com/opentomb/OpenTomb/commit/c29c273fb2379c817cbed5f9ce6153741bc657cf">https://github.com/opentomb/OpenTomb/commit/c29c273fb2379c817cbed5f9ce6153741bc657cf
+</a></li><li><a href="https://github.com/rishabhp/pappu-pakia/commit/e874389a6cc815540949aedfdb639e98f9322b48">https://github.com/rishabhp/pappu-pakia/commit/e874389a6cc815540949aedfdb639e98f9322b48
+</a></li><li><a href="https://github.com/rishabhp/pappu-pakia/commit/bc9e02cfd2ffea3ac141627538a727c93753c166">https://github.com/rishabhp/pappu-pakia/commit/bc9e02cfd2ffea3ac141627538a727c93753c166
+</a></li><li><a href="https://github.com/rishabhp/pappu-pakia/commit/5bff4ba3c74aab713735c47ed2f5b1f205c0b31f">https://github.com/rishabhp/pappu-pakia/commit/5bff4ba3c74aab713735c47ed2f5b1f205c0b31f
+</a></li><li><a href="https://github.com/gbatha/PolyBranch/commit/f8d6982279252af307b26b102899513009dfebf7">https://github.com/gbatha/PolyBranch/commit/f8d6982279252af307b26b102899513009dfebf7
+</a></li><li><a href="https://github.com/gbatha/PolyBranch/commit/b895d506f383f8702d7def9967b340e1c0d943c4">https://github.com/gbatha/PolyBranch/commit/b895d506f383f8702d7def9967b340e1c0d943c4
+</a></li><li><a href="https://github.com/gbatha/PolyBranch/commit/f12b7f194a7c6516df63c850e257c5720272873f">https://github.com/gbatha/PolyBranch/commit/f12b7f194a7c6516df63c850e257c5720272873f
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/commit/7188df8f6a039c73586480c5e7e45ebde6c5debe">https://github.com/RigsOfRods/rigs-of-rods/commit/7188df8f6a039c73586480c5e7e45ebde6c5debe
+</a></li><li><a href="https://github.com/softvar/save-the-forest/commit/18839a8466807aca882c02dbcb05c05b13897e15">https://github.com/softvar/save-the-forest/commit/18839a8466807aca882c02dbcb05c05b13897e15
+</a></li><li><a href="https://github.com/basicallydan/skifree.js/commit/6080c8770f8b77fc04bb385a9a28c430cec39cf2">https://github.com/basicallydan/skifree.js/commit/6080c8770f8b77fc04bb385a9a28c430cec39cf2
+</a></li><li><a href="https://github.com/basicallydan/skifree.js/commit/dc7c4346113a703d21c06f60aa1deb6ca96a1205">https://github.com/basicallydan/skifree.js/commit/dc7c4346113a703d21c06f60aa1deb6ca96a1205
+</a></li><li><a href="https://github.com/SuperTux/supertux/commit/2727ab201df5e990814f186b46ff723242f76a4f">https://github.com/SuperTux/supertux/commit/2727ab201df5e990814f186b46ff723242f76a4f
+</a></li><li><a href="https://github.com/SuperTux/supertux/commit/f0209f65f15d785924c381381a483934c593b38c">https://github.com/SuperTux/supertux/commit/f0209f65f15d785924c381381a483934c593b38c
+</a></li><li><a href="https://github.com/scottschiller/SURVIVOR/commit/fef045dd58eea5c7ea9400d9bf6ae8476c1a8601">https://github.com/scottschiller/SURVIVOR/commit/fef045dd58eea5c7ea9400d9bf6ae8476c1a8601
+</a></li><li><a href="https://github.com/w84death/Tanks-of-Freedom/commit/088411d030a1ef657bae14b8830855a4e91a3415">https://github.com/w84death/Tanks-of-Freedom/commit/088411d030a1ef657bae14b8830855a4e91a3415
+</a></li><li><a href="https://github.com/w84death/Tanks-of-Freedom/commit/08ebf4717ac0d26261aee0143a8d556010dfca8e">https://github.com/w84death/Tanks-of-Freedom/commit/08ebf4717ac0d26261aee0143a8d556010dfca8e
+</a></li><li><a href="https://github.com/w84death/Tanks-of-Freedom/commit/0a8e7cddac7737cac2f4289b876551453f9f6d1b">https://github.com/w84death/Tanks-of-Freedom/commit/0a8e7cddac7737cac2f4289b876551453f9f6d1b
+</a></li><li><a href="https://github.com/w84death/Tanks-of-Freedom/commit/65a17a603bf80b36b9c41e186a4b276a5f423109">https://github.com/w84death/Tanks-of-Freedom/commit/65a17a603bf80b36b9c41e186a4b276a5f423109
+</a></li><li><a href="https://github.com/teeworlds/teeworlds/commit/8be930173ffce3c93a70021cf3a51685d2175d4f">https://github.com/teeworlds/teeworlds/commit/8be930173ffce3c93a70021cf3a51685d2175d4f
+</a></li><li><a href="https://github.com/teeworlds/teeworlds/commit/3aeffa3ae0311263209d7451e5d035a9953a412c">https://github.com/teeworlds/teeworlds/commit/3aeffa3ae0311263209d7451e5d035a9953a412c
+</a></li><li><a href="https://github.com/teeworlds/teeworlds/commit/9e7762113d6e194819c2daeab3fcf73a0d87bdeb">https://github.com/teeworlds/teeworlds/commit/9e7762113d6e194819c2daeab3fcf73a0d87bdeb
+</a></li><li><a href="https://github.com/teeworlds/teeworlds/commit/ce54eca85d3f54ebd6309b15d9bc0c019798cc1b">https://github.com/teeworlds/teeworlds/commit/ce54eca85d3f54ebd6309b15d9bc0c019798cc1b
+</a></li><li><a href="https://github.com/MovingBlocks/Terasology/commit/a14a93cabe3ef24ca1154340a18926e901e0089c">https://github.com/MovingBlocks/Terasology/commit/a14a93cabe3ef24ca1154340a18926e901e0089c
+</a></li><li><a href="https://github.com/MovingBlocks/Terasology/commit/2fb0d6b39dec7cd16bf414ee45defabfba42c7ae">https://github.com/MovingBlocks/Terasology/commit/2fb0d6b39dec7cd16bf414ee45defabfba42c7ae
+</a></li><li><a href="https://github.com/MovingBlocks/Terasology/commit/0f268fa80f482f5be47d54c8b245befadc21ad44">https://github.com/MovingBlocks/Terasology/commit/0f268fa80f482f5be47d54c8b245befadc21ad44
+</a></li><li><a href="https://github.com/The-Powder-Toy/The-Powder-Toy/commit/5508f0ccfd9942e89be7e1cec4f01327b1fae51f">https://github.com/The-Powder-Toy/The-Powder-Toy/commit/5508f0ccfd9942e89be7e1cec4f01327b1fae51f
+</a></li><li><a href="https://github.com/The-Powder-Toy/The-Powder-Toy/commit/3fb134f8143d442d9db1d3596ab97115b7acbc1d">https://github.com/The-Powder-Toy/The-Powder-Toy/commit/3fb134f8143d442d9db1d3596ab97115b7acbc1d
+</a></li><li><a href="https://github.com/The-Powder-Toy/The-Powder-Toy/commit/a8489ba6f55879a920e92b58d52044997499f01b">https://github.com/The-Powder-Toy/The-Powder-Toy/commit/a8489ba6f55879a920e92b58d52044997499f01b
+</a></li><li><a href="https://github.com/The-Powder-Toy/The-Powder-Toy/commit/bd8550c2d58f31ea8b8fc6c56bb5740b98f9d901">https://github.com/The-Powder-Toy/The-Powder-Toy/commit/bd8550c2d58f31ea8b8fc6c56bb5740b98f9d901
+</a></li><li><a href="https://github.com/The-Powder-Toy/The-Powder-Toy/commit/2a829c23949b5c61ec027c8a44401f1be16f3c42">https://github.com/The-Powder-Toy/The-Powder-Toy/commit/2a829c23949b5c61ec027c8a44401f1be16f3c42
+</a></li><li><a href="https://github.com/AlexNisnevich/untrusted/commit/b048ad6b8d29412239a1930e35b8be995bf4c7d1">https://github.com/AlexNisnevich/untrusted/commit/b048ad6b8d29412239a1930e35b8be995bf4c7d1
+</a></li><li><a href="https://github.com/AlexNisnevich/untrusted/commit/7868bc97568ad6ee632c73127584b46b82b4e139">https://github.com/AlexNisnevich/untrusted/commit/7868bc97568ad6ee632c73127584b46b82b4e139
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/742f45a31ba1fa48dee4d02384f63262305c1807">https://github.com/Unvanquished/Unvanquished/commit/742f45a31ba1fa48dee4d02384f63262305c1807
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/c48b0a5e27146ccfa6bdb852a52980d417d84d19">https://github.com/Unvanquished/Unvanquished/commit/c48b0a5e27146ccfa6bdb852a52980d417d84d19
+</a></li><li><a href="https://github.com/wesnoth/wesnoth/commit/6c999dea00932746ced1e87b184c2c5b2bc212ad">https://github.com/wesnoth/wesnoth/commit/6c999dea00932746ced1e87b184c2c5b2bc212ad
+</a></li><li><a href="https://github.com/jfd/wpilot/commit/a08b444201e31c0943083d790a40775a52ae27f7">https://github.com/jfd/wpilot/commit/a08b444201e31c0943083d790a40775a52ae27f7</a></li>
+    </ul>
+     
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Issues</div>
+      <div class="panel-body">19 occurrences</div>
+      <ul>
+        
+<li><a href="https://github.com/gabrielecirulli/2048/issues/482">https://github.com/gabrielecirulli/2048/issues/482</a></li>
+<li><a href="https://github.com/gabrielecirulli/2048/issues/340">https://github.com/gabrielecirulli/2048/issues/340</a></li>
+<li><a href="https://github.com/lo-th/3d.city/issues/2">https://github.com/lo-th/3d.city/issues/2</a></li>
+<li><a href="https://github.com/cykod/AlienInvasion/issues/4">https://github.com/cykod/AlienInvasion/issues/4</a></li>
+<li><a href="https://github.com/FreezingMoon/AncientBeast/issues/8">https://github.com/FreezingMoon/AncientBeast/issues/8</a></li>
+<li><a href="https://github.com/FreezingMoon/AncientBeast/issues/6">https://github.com/FreezingMoon/AncientBeast/issues/6</a></li>
+<li><a href="https://github.com/Aerolab/blockrain.js/issues/26">https://github.com/Aerolab/blockrain.js/issues/26</a></li>
+<li><a href="https://github.com/tizian/Cendric2/issues/133">https://github.com/tizian/Cendric2/issues/133</a></li>
+<li><a href="https://github.com/fogleman/Craft/issues/230">https://github.com/fogleman/Craft/issues/230</a></li>
+<li><a href="https://github.com/crawl/crawl/issues/706">https://github.com/crawl/crawl/issues/706</a></li>
+<li><a href="https://github.com/David20321/FTJ/issues/6">https://github.com/David20321/FTJ/issues/6</a></li>
+<li><a href="https://github.com/BKcore/HexGL/issues/19">https://github.com/BKcore/HexGL/issues/19</a></li>
+<li><a href="https://github.com/justinmeister/Mario-Level-1/issues/17">https://github.com/justinmeister/Mario-Level-1/issues/17</a></li>
+<li><a href="https://github.com/fogleman/Minecraft/issues/107">https://github.com/fogleman/Minecraft/issues/107</a></li>
+<li><a href="https://github.com/fogleman/Minecraft/issues/33">https://github.com/fogleman/Minecraft/issues/33</a></li>
+<li><a href="https://github.com/RigsOfRods/rigs-of-rods/issues/244">https://github.com/RigsOfRods/rigs-of-rods/issues/244</a></li>
+<li><a href="https://github.com/arianne/stendhal/issues/344">https://github.com/arianne/stendhal/issues/344</a></li>
+<li><a href="https://github.com/arianne/stendhal/issues/43">https://github.com/arianne/stendhal/issues/43</a></li>
+<li><a href="https://github.com/w84death/Tanks-of-Freedom/issues/36">https://github.com/w84death/Tanks-of-Freedom/issues/36</a></li>
+      </ul>
+    </div>
+        <div class="panel panel-info">
+      <div class="panel-heading">Pull Requests</div>
+      <div class="panel-body">13 occurrences</div>
+      <ul>
+<li><a href="https://github.com/gabrielecirulli/2048/pull/484">https://github.com/gabrielecirulli/2048/pull/484</a></li>
+<li><a href="https://github.com/gabrielecirulli/2048/pull/32">https://github.com/gabrielecirulli/2048/pull/32</a></li>
+<li><a href="https://github.com/gabrielecirulli/2048/pull/21">https://github.com/gabrielecirulli/2048/pull/21</a></li>
+<li><a href="https://github.com/FreezingMoon/AncientBeast/pull/942">https://github.com/FreezingMoon/AncientBeast/pull/942</a></li>
+<li><a href="https://github.com/Aerolab/blockrain.js/pull/23">https://github.com/Aerolab/blockrain.js/pull/23</a></li>
+<li><a href="https://github.com/WinterLicht/Chaos-Projectile/pull/7">https://github.com/WinterLicht/Chaos-Projectile/pull/7</a></li>
+<li><a href="https://github.com/fogleman/Craft/pull/179">https://github.com/fogleman/Craft/pull/179</a></li>
+<li><a href="https://github.com/antionio/game-off-2013/pull/1">https://github.com/antionio/game-off-2013/pull/1</a></li>
+<li><a href="https://github.com/NetHack/NetHack/pull/247">https://github.com/NetHack/NetHack/pull/247</a></li>
+<li><a href="https://github.com/OpenMW/openmw/pull/2722">https://github.com/OpenMW/openmw/pull/2722</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/pull/591">https://github.com/opentomb/OpenTomb/pull/591</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/pull/589">https://github.com/opentomb/OpenTomb/pull/589</a></li>
+<li><a href="https://github.com/rishabhp/pappu-pakia/pull/5">https://github.com/rishabhp/pappu-pakia/pull/5</a></li>
+      </ul>
+    </div>
+</div>
+  </div>
+</body>
+</html>

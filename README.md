@@ -1,0 +1,1 @@
+# Catalogue-of-Game-Specific-Anti-Patterns

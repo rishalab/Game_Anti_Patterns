@@ -1,0 +1,224 @@
+<!-------made by Vartika Agrahari (CS18M016)------------>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Catalogue of Game-Specific Anti-Patterns</title>
+  <meta charset="utf-8">
+  <meta name ="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #5E4485;
+      color: #FFF;
+      padding:3% 0;
+      font-size: 1.2em;
+      border: 0;
+      text-align: left;
+    }
+    .navbar-brand {
+      float: left;
+      font-size: 3em;
+      min-height: 55px;
+      padding: 15px 15px 15px;
+      color: #FFF;
+      text-align: left;
+    } 
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      background-color: #5E4485;
+      text-align: left;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #FFF;
+      text-align: left;
+    }
+    footer {
+      width: 100%;
+      background-color: #5E4485;
+      padding: 1% 0;
+      color: #FFF;
+      text-align: left;
+    } 
+    .txt {
+      color: #FFF;
+      font-size: 2em;
+    }
+  #grad1 {
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, teal , #0f4d92); /* Standard syntax (must be last) */
+} 
+    h1 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #000;
+      text-align: left;      
+    }
+    h2 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    h3 {
+      font-size: 1.50em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      color: #FFF;
+      text-align: left;
+    }
+    .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    @media (max-width: 900px) {
+     .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-caption{
+      display:none;
+      text-align: left;
+    }
+  }
+  .container {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  </style>
+</head>
+<body>
+  <nav id="grad1" class="navbar navbar-inverse">
+    <div id="grad1" class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <p class="txt">A Catalogue of Game-Specific Anti-Patterns</p>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a id="grad1" href="index.html">Home</a></li>
+          <li ><a id="grad1" href="docs.html">Documents</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container text-center">
+<h1>Unwanted Movement of Game Objects</h1>
+<h4>(63 occurrences)</h4>
+<p>Objects or icons which are making an unwanted move in games and vice versa affects the usability of game.</p>
+<h2>Context</h2>
+<p>Player moves are one of the important part of gameplay. Player movements should be logical, consistent and optimized [1].</p>
+<h2>Problem</h2>
+<p>If the game does not follow the expected behaviour, it causes hindrance in the usability of game. It does not cause any violation in the game rules, but it makes the game clumsy to play.</p>
+<h2>Solution</h2>
+<p>Developers should focus on these Anti-Patterns keenly, as it can reduce the demand of game in the market.</p>
+<h2>Example</h2>
+<p>Consider the case of board game such as chess which requires grabbing and moving the pieces in game. Thus, the player should not be allowed to move jail pieces. Similarly, there should be a check on moving pieces so that the players does not moves the piece which is not of his/her colour. This avoids unnecessary extra work.</p>
+<h3>Reference</h3>
+<p>[1] Korhonen and E. M. Koivisto. Playability heuristics for mobile games. In Proceedings of the 8th conference on Human-computer interaction with mobiledevices and services, pages 9–16, 2006.</p>
+<h2>Occurrences</h2>
+
+  <div class="panel-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">Commits</div>
+      <div class="panel-body">38 occurrences</div>
+      <ul>
+     <li><a href="https://github.com/doublespeakgames/adarkroom/commit/b57bbfa83d8b34d56888a8548df61ab0a61de65f">https://github.com/doublespeakgames/adarkroom/commit/b57bbfa83d8b34d56888a8548df61ab0a61de65f</a></li>
+<li><a href="https://github.com/doublespeakgames/adarkroom/commit/2ba2812a8bba349ed3042e661686af75b886bd04">https://github.com/doublespeakgames/adarkroom/commit/2ba2812a8bba349ed3042e661686af75b886bd04</a></li>
+<li><a href="https://github.com/doublespeakgames/adarkroom/commit/ea0aff072f2e17b53be9df4c752227edda608832">https://github.com/doublespeakgames/adarkroom/commit/ea0aff072f2e17b53be9df4c752227edda608832</a></li>
+<li><a href="https://github.com/doublespeakgames/adarkroom/commit/07998376e72cce92b106856d83d4b32eb7950509">https://github.com/doublespeakgames/adarkroom/commit/07998376e72cce92b106856d83d4b32eb7950509</a></li>
+<li><a href="https://github.com/sweetcarolinagames/BitBot/commit/4ae2e287437c490b9ca7189294705f610fdc40c3">https://github.com/sweetcarolinagames/BitBot/commit/4ae2e287437c490b9ca7189294705f610fdc40c3</a></li>
+<li><a href="https://github.com/sweetcarolinagames/BitBot/commit/22b0d4b06bee4c0bac68d3b4ac1461430b37655d">https://github.com/sweetcarolinagames/BitBot/commit/22b0d4b06bee4c0bac68d3b4ac1461430b37655d</a></li>
+<li><a href="https://github.com/sweetcarolinagames/BitBot/commit/ca0677d2a0f669fbc6904c627d655bd51f82885a">https://github.com/sweetcarolinagames/BitBot/commit/ca0677d2a0f669fbc6904c627d655bd51f82885a</a></li>
+<li><a href="https://github.com/sweetcarolinagames/BitBot/commit/13a4f7594007bf80ba9ad2dc3f726f117d78c9d1">https://github.com/sweetcarolinagames/BitBot/commit/13a4f7594007bf80ba9ad2dc3f726f117d78c9d1</a></li>
+<li><a href="https://github.com/sweetcarolinagames/BitBot/commit/065a07d3ee62c3714ddaa74915da83895e9aa650">https://github.com/sweetcarolinagames/BitBot/commit/065a07d3ee62c3714ddaa74915da83895e9aa650</a></li>
+<li><a href="https://github.com/colobot/colobot/commit/831276f37892fba73865be4e668d9dae68e1b3f2">https://github.com/colobot/colobot/commit/831276f37892fba73865be4e668d9dae68e1b3f2</a></li>
+<li><a href="https://github.com/paulbatum/Dominion/commit/ca169d371a85bca7aead42564760f3a1ce477a04">https://github.com/paulbatum/Dominion/commit/ca169d371a85bca7aead42564760f3a1ce477a04</a></li>
+<li><a href="https://github.com/BKcore/HexGL/commit/107fe6641cd6edd4452445fcd811026037b66b84">https://github.com/BKcore/HexGL/commit/107fe6641cd6edd4452445fcd811026037b66b84</a></li>
+<li><a href="https://github.com/Hextris/hextris/commit/344d42acebfaeadf7dd7f9e28eb6241ee31c2bab">https://github.com/Hextris/hextris/commit/344d42acebfaeadf7dd7f9e28eb6241ee31c2bab</a></li>
+<li><a href="https://github.com/Hextris/hextris/commit/e388cac85a301b1f06ad1c0d034eccbc444acd76">https://github.com/Hextris/hextris/commit/e388cac85a301b1f06ad1c0d034eccbc444acd76</a></li>
+<li><a href="https://github.com/Hextris/hextris/commit/debba1e2f9f4b50e83fa77744cedb33bb8f8f8df">https://github.com/Hextris/hextris/commit/debba1e2f9f4b50e83fa77744cedb33bb8f8f8df</a></li>
+<li><a href="https://github.com/Hextris/hextris/commit/1b59126ed79efc4639cb432fb87aa00697aff5b7">https://github.com/Hextris/hextris/commit/1b59126ed79efc4639cb432fb87aa00697aff5b7</a></li>
+<li><a href="https://github.com/ioquake/ioq3/commit/f717a8396e87a291a97d1a6ab9ace1eada16043">https://github.com/ioquake/ioq3/commit/f717a8396e87a291a97d1a6ab9ace1eada160433</a></li>
+<li><a href="https://github.com/ioquake/ioq3/commit/45f8512f8eff99dd7e92e3ab4440d250a7de5dbf">https://github.com/ioquake/ioq3/commit/45f8512f8eff99dd7e92e3ab4440d250a7de5dbf</a></li>
+<li><a href="https://github.com/justinmeister/Mario-Level-1/commit/a8c88be092063e771b6d139e9f367103f1ab2493">https://github.com/justinmeister/Mario-Level-1/commit/a8c88be092063e771b6d139e9f367103f1ab2493</a></li>
+<li><a href="https://github.com/Meridian59/Meridian59/commit/1d5470035cb8051bc675a32e59071b8fdc6a787f">https://github.com/Meridian59/Meridian59/commit/1d5470035cb8051bc675a32e59071b8fdc6a787f</a></li>
+<li><a href="https://github.com/NetHack/NetHack/commit/1641c864a2d128a3aa4e640464f3e3b01ab50754">https://github.com/NetHack/NetHack/commit/1641c864a2d128a3aa4e640464f3e3b01ab50754</a></li>
+<li><a href="https://github.com/XProger/OpenLara/commit/041e1b898ce029439beceafd46e9a7ece9fc7e53">https://github.com/XProger/OpenLara/commit/041e1b898ce029439beceafd46e9a7ece9fc7e53</a></li>
+<li><a href="https://github.com/XProger/OpenLara/commit/5b48ad1453782c48f25ec58c66b4672a3b2a2862">https://github.com/XProger/OpenLara/commit/5b48ad1453782c48f25ec58c66b4672a3b2a2862</a></li>
+<li><a href="https://github.com/OpenMW/openmw/commit/4a6d2cbaff17a27a0eac0676804db1a56ecf80b9">https://github.com/OpenMW/openmw/commit/4a6d2cbaff17a27a0eac0676804db1a56ecf80b9</a></li>
+<li><a href="https://github.com/OpenMW/openmw/commit/ef2a7160fa21142fe0f4d6fdac2cafa40a651c08">https://github.com/OpenMW/openmw/commit/ef2a7160fa21142fe0f4d6fdac2cafa40a651c08</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/7bdf4c9e2955c78620309a3f027a6379c1a247e3">https://github.com/opentomb/OpenTomb/commit/7bdf4c9e2955c78620309a3f027a6379c1a247e3</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/161bae2235f603bbdc72389dbba294889b23b951">https://github.com/opentomb/OpenTomb/commit/161bae2235f603bbdc72389dbba294889b23b951</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/f4df14c5ed0d92e142e98610f367539205aef6ef">https://github.com/opentomb/OpenTomb/commit/f4df14c5ed0d92e142e98610f367539205aef6ef</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/f7613b3896447e06d922255e987134936203ce52">https://github.com/opentomb/OpenTomb/commit/f7613b3896447e06d922255e987134936203ce52</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/be1184145b77d35df7888ce5a9dbad3a34841bd3">https://github.com/opentomb/OpenTomb/commit/be1184145b77d35df7888ce5a9dbad3a34841bd3</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/4ae3619996cb02b2489e4068575610cdc11290ee">https://github.com/opentomb/OpenTomb/commit/4ae3619996cb02b2489e4068575610cdc11290ee</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/1e801fdf7a5b61d7e0c4ecb5e0e45431125c0e9b">https://github.com/opentomb/OpenTomb/commit/1e801fdf7a5b61d7e0c4ecb5e0e45431125c0e9b</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/commit/7882649c245630e301c5b8b496bcc53822622561">https://github.com/opentomb/OpenTomb/commit/7882649c245630e301c5b8b496bcc53822622561</a></li>
+<li><a href="https://github.com/rishabhp/pappu-pakia/commit/47e2fa83685e0c852dca72e7f6d0e7c3f991d9a">https://github.com/rishabhp/pappu-pakia/commit/47e2fa83685e0c852dca72e7f6d0e7c3f991d9ac</a></li>
+<li><a href="https://github.com/rishabhp/pappu-pakia/commit/308a07a751dbca7e2dbf3d754b2adcc31b5ad06d">https://github.com/rishabhp/pappu-pakia/commit/308a07a751dbca7e2dbf3d754b2adcc31b5ad06d</a></li>
+<li><a href="https://github.com/w84death/Tanks-of-Freedom/commit/e8f928e117a29585210a5daa21bee39377074f08">https://github.com/w84death/Tanks-of-Freedom/commit/e8f928e117a29585210a5daa21bee39377074f08</a></li>
+<li><a href="https://github.com/teeworlds/teeworlds/commit/44ea0a230db32409a97c25299b237b9dd8044c46">https://github.com/teeworlds/teeworlds/commit/44ea0a230db32409a97c25299b237b9dd8044c46</a></li>
+<li><a href="https://github.com/teeworlds/teeworlds/commit/595cc50a083fb66d5b66408ee00e33f63a8429ae">https://github.com/teeworlds/teeworlds/commit/595cc50a083fb66d5b66408ee00e33f63a8429ae</a></li>
+</ul>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Issues</div>
+      <div class="panel-body">15 occurrences</div>
+      <ul>
+<li><a href="https://github.com/juliangarnier/3D-Hartwig-chess-set/issues/8">https://github.com/juliangarnier/3D-Hartwig-chess-set/issues/8</a></li>
+<li><a href="https://github.com/kenrick95/c4/issues/2">https://github.com/kenrick95/c4/issues/2</a></li>
+<li><a href="https://github.com/crawl/crawl/issues/710">https://github.com/crawl/crawl/issues/710</a></li>
+<li><a href="https://github.com/BKcore/HexGL/issues/45">h">ttps://github.com/BKcore/HexGL/issues/45</a></li>
+<li><a href="https://github.com/BKcore/HexGL/issues/39">https://github.com/BKcore/HexGL/issues/39</a></li>
+<li><a href="https://github.com/BKcore/HexGL/issues/9">https://github.com/BKcore/HexGL/issues/9</a></li>
+<li><a href="https://github.com/ornicar/lila/issues/6166">https://github.com/ornicar/lila/issues/6166</a></li>
+<li><a href="https://github.com/fogleman/Minecraft/issues/104">https://github.com/fogleman/Minecraft/issues/104</a></li>
+<li><a href="https://github.com/fogleman/Minecraft/issues/30">https://github.com/fogleman/Minecraft/issues/30</a></li>
+<li><a href="https://github.com/NetHack/NetHack/issues/72">https://github.com/NetHack/NetHack/issues/72</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/issues/13">https://github.com/opentomb/OpenTomb/issues/13</a></li>
+<li><a href="https://github.com/arianne/stendhal/issues/348">https://github.com/arianne/stendhal/issues/348</a></li>
+<li><a href="https://github.com/arianne/stendhal/issues/346">https://github.com/arianne/stendhal/issues/346</a></li>
+<li><a href="https://github.com/SuperTux/supertux/issues/15">https://github.com/SuperTux/supertux/issues/15</a></li>
+<li><a href="https://github.com/w84death/Tanks-of-Freedom/issues/12">https://github.com/w84death/Tanks-of-Freedom/issues/12</a></li>
+      </ul>
+    </div>
+        <div class="panel panel-info">
+      <div class="panel-heading">Pull Requests</div>
+      <div class="panel-body">10 occurrences</div>
+      <ul>
+<li><a href="https://github.com/juliangarnier/3D-Hartwig-chess-set/pull/10">https://github.com/juliangarnier/3D-Hartwig-chess-set/pull/10</a></li>
+<li><a href="https://github.com/angband/angband/pull/11">https://github.com/angband/angband/pull/11</a></li>
+<li><a href="https://github.com/angband/angband/pull/146">https://github.com/angband/angband/pull/146</a></li>
+<li><a href="https://github.com/lpinca/binb/pull/17">https://github.com/lpinca/binb/pull/17</a></li>
+<li><a href="https://github.com/lpinca/binb/pull/10">https://github.com/lpinca/binb/pull/10</a></li>
+<li><a href="https://github.com/Aerolab/blockrain.js/pull/22">https://github.com/Aerolab/blockrain.js/pull/22</a></li>
+<li><a href="https://github.com/hawkthorne/hawkthorne-journey/pull/2515">https://github.com/hawkthorne/hawkthorne-journey/pull/2515</a></li>
+<li><a href="https://github.com/fogleman/Minecraft/pull/2">https://github.com/fogleman/Minecraft/pull/2</a></li>
+<li><a href="https://github.com/opentomb/OpenTomb/pull/6">https://github.com/opentomb/OpenTomb/pull/6</a></li>
+<li><a href="https://github.com/KeenSoftwareHouse/SpaceEngineers/pull/534">https://github.com/KeenSoftwareHouse/SpaceEngineers/pull/534></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

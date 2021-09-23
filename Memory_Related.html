@@ -1,0 +1,217 @@
+<!-------made by Vartika Agrahari (CS18M016)------------>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Catalogue of Game-Specific Anti-Patterns</title>
+	<meta charset="utf-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<style>
+    .navbar {
+    	margin-bottom: 0;
+    	border-radius: 0;
+    	background-color: #5E4485;
+    	color: #FFF;
+    	padding:3% 0;
+    	font-size: 1.2em;
+    	border: 0;
+      text-align: left;
+    }
+    .navbar-brand {
+    	float: left;
+      font-size: 3em;
+    	min-height: 55px;
+    	padding: 15px 15px 15px;
+      color: #FFF;
+      text-align: left;
+    } 
+    .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover {
+      color: #FFF;
+      background-color: #5E4485;
+      text-align: left;
+    }
+    .navbar-inverse .navbar-nav li a {
+      color: #FFF;
+      text-align: left;
+    }
+    footer {
+      width: 100%;
+      background-color: #5E4485;
+      padding: 1% 0;
+      color: #FFF;
+      text-align: left;
+    } 
+    .txt {
+      color: #FFF;
+      font-size: 2em;
+    }
+  #grad1 {
+  background-color: teal; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, teal , #0f4d92); /* Standard syntax (must be last) */
+} 
+    h1 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #000;
+      text-align: left;      
+    }
+    h2 {
+      font-size: 2em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    h3 {
+      font-size: 1.50em;
+      background-color: #FFF;
+      color: #576756;
+      text-align: left;
+    }
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      color: #FFF;
+      text-align: left;
+    }
+    .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    @media (max-width: 900px) {
+     .fa:hover {
+      color: #FFF;
+      text-decoration: none;
+      text-align: left;
+      }
+    }
+    @media (max-width: 600px) {
+      .carousel-caption{
+      display:none;
+      text-align: left;
+    }
+  }
+  .container {
+    font-size: 1.2em;
+    text-align: left;
+  }
+	</style>
+</head>
+<body>
+	<nav id="grad1" class="navbar navbar-inverse">
+		<div id="grad1" class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<p class="txt">A Catalogue of Game-Specific Anti-Patterns</p>
+			</div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a id="grad1" href="index.html">Home</a></li>
+          <li ><a id="grad1" href="docs.html">Documents</a></li>
+        </ul>
+      </div>
+		</div>
+	</nav>
+  <div class="container text-center">
+<h1>Avoid Memory Leaks</h1>
+<h4>(53 occurrences)</h4>
+<p>Memory related issues which affects the performance of games are categorized in this theme.</p>
+<h2>Context</h2>
+<p>Games involve different game objects, and assets which consumes a lot of memory. This memory storage should be used wisely, otherwise it can cause memory related issues.</p>
+<h2>Problem</h2>
+<p> Memory leak causes reduction in available memory for usage, which causes bad performance.</p>
+<h2>Solution</h2>
+<p>To avoid memory leak problem, developers should free up the unnecessary variables and game objects, and should use the idea of data locality [1]. Developers should use object pool where memory can be reused instead of allocating and freeing them everytime [1].</p>
+<h2>Example</h2>
+<p>Consider an arcade game, where different game objects keeps on appearing and disappearing in the game play. These objects needs to be handled carefully in the memory to avoid memory leak.</p>
+<h3>Reference</h3>
+<p>[1] Nystrom. Game programming patterns. Genever Benning, 2014.</p>
+<h2>Occurrences</h2>
+
+  <div class="panel-group">
+    <div class="panel panel-info">
+      <div class="panel-heading">Commits</div>
+      <div class="panel-body">39 occurrences</div>
+     <ul>
+<li><a href="https://github.com/0ad/0ad/commit/dceffc9508bfbe5ce32ec5c2cd942237381bdaac">https://github.com/0ad/0ad/commit/dceffc9508bfbe5ce32ec5c2cd942237381bdaac
+</a></li><li><a href="https://github.com/0ad/0ad/commit/7ea597aeaf6d796772d71a9a83670c042869c91c">https://github.com/0ad/0ad/commit/7ea597aeaf6d796772d71a9a83670c042869c91c
+</a></li><li><a href="https://github.com/doublespeakgames/adarkroom/commit/4f82e33f7cc3afb9ce497073ab226e29afd47b3b">https://github.com/doublespeakgames/adarkroom/commit/4f82e33f7cc3afb9ce497073ab226e29afd47b3b
+</a></li><li><a href="https://github.com/lpinca/binb/commit/a3614697558ec8143a33d1cf87234b37b27b6082">https://github.com/lpinca/binb/commit/a3614697558ec8143a33d1cf87234b37b27b6082
+</a></li><li><a href="https://github.com/CleverRaven/Cataclysm-DDA/commit/6c6cfc8b254072961dddf306b30d858a717c6abc">https://github.com/CleverRaven/Cataclysm-DDA/commit/6c6cfc8b254072961dddf306b30d858a717c6abc
+</a></li><li><a href="https://github.com/colobot/colobot/commit/210b5c295d601ffea7acdb3a7505e0102571bc6f">https://github.com/colobot/colobot/commit/210b5c295d601ffea7acdb3a7505e0102571bc6f
+</a></li><li><a href="https://github.com/akien-mga/dynadungeons/commit/9cfb7b0262588dbf0ac1856fca9c00b94b655fe8">https://github.com/akien-mga/dynadungeons/commit/9cfb7b0262588dbf0ac1856fca9c00b94b655fe8
+</a></li><li><a href="https://github.com/akien-mga/dynadungeons/commit/626c8d7491e288e5cd69649313ad72bfa9732907">https://github.com/akien-mga/dynadungeons/commit/626c8d7491e288e5cd69649313ad72bfa9732907
+</a></li><li><a href="https://github.com/wheybags/freeablo/commit/4aae080a310efe0ac71df23c7cc3e0f5ccda063d">https://github.com/wheybags/freeablo/commit/4aae080a310efe0ac71df23c7cc3e0f5ccda063d
+</a></li><li><a href="https://github.com/wheybags/freeablo/commit/8fddb37aa449911d12cfe2446c5bc417a1a6d2d1">https://github.com/wheybags/freeablo/commit/8fddb37aa449911d12cfe2446c5bc417a1a6d2d1
+</a></li><li><a href="https://github.com/freeciv/freeciv-web/commit/3a9ba68338a09872caef5b86ef1785f1418211e5">https://github.com/freeciv/freeciv-web/commit/3a9ba68338a09872caef5b86ef1785f1418211e5
+</a></li><li><a href="https://github.com/ioquake/ioq3/commit/7391215bd4d1228b9887fab4b181d6f881d12574">https://github.com/ioquake/ioq3/commit/7391215bd4d1228b9887fab4b181d6f881d12574
+</a></li><li><a href="https://github.com/miki151/keeperrl/commit/2bba41803495d2228026355763448bb375fea902">https://github.com/miki151/keeperrl/commit/2bba41803495d2228026355763448bb375fea902
+</a></li><li><a href="https://github.com/miki151/keeperrl/commit/7f383e5a429d45bd9d3fefda4b1dc39057d7deb8">https://github.com/miki151/keeperrl/commit/7f383e5a429d45bd9d3fefda4b1dc39057d7deb8
+</a></li><li><a href="https://github.com/miki151/keeperrl/commit/5757d0c2fdd71c3a0348ac075c1d84b3655c6457">https://github.com/miki151/keeperrl/commit/5757d0c2fdd71c3a0348ac075c1d84b3655c6457
+</a></li><li><a href="https://github.com/minetest/minetest/commit/9cb3219f34be983e1b84a62a64c25e137d587365">https://github.com/minetest/minetest/commit/9cb3219f34be983e1b84a62a64c25e137d587365
+</a></li><li><a href="https://github.com/minetest/minetest/commit/cbcb9e0b1cd717cc4a7e48eb8cc5c74678c5427f">https://github.com/minetest/minetest/commit/cbcb9e0b1cd717cc4a7e48eb8cc5c74678c5427f
+</a></li><li><a href="https://github.com/minetest/minetest/commit/b8131c3415ee8811ab98b537c080d203d8bee774">https://github.com/minetest/minetest/commit/b8131c3415ee8811ab98b537c080d203d8bee774
+</a></li><li><a href="https://github.com/minetest/minetest/commit/120155f312cb1977b9a325acc7c7679103eb3800">https://github.com/minetest/minetest/commit/120155f312cb1977b9a325acc7c7679103eb3800
+</a></li><li><a href="https://github.com/minetest/minetest/commit/233cb86e864affe3dee8f60503584f1eb7e36287">https://github.com/minetest/minetest/commit/233cb86e864affe3dee8f60503584f1eb7e36287
+</a></li><li><a href="https://github.com/minetest/minetest/commit/4e3c1916f731058a137ec1f9eecf2b7eff4d8fcc">https://github.com/minetest/minetest/commit/4e3c1916f731058a137ec1f9eecf2b7eff4d8fcc
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/ffcd471ef7e9737032fa7fe85f67cbfdbaca2175">https://github.com/NetHack/NetHack/commit/ffcd471ef7e9737032fa7fe85f67cbfdbaca2175
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/f76aba4d7fc65dfad9b15107892de4c1f59e2a8c">https://github.com/NetHack/NetHack/commit/f76aba4d7fc65dfad9b15107892de4c1f59e2a8c
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/75e9055b89b26d7e5354b114907fa8bf141fb4a9">https://github.com/NetHack/NetHack/commit/75e9055b89b26d7e5354b114907fa8bf141fb4a9
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/9a8bea550f1fe541df38035084e620e69edfb179">https://github.com/NetHack/NetHack/commit/9a8bea550f1fe541df38035084e620e69edfb179
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/5d6b3b6f513ac7833e4592aa1583d1c03375b2a2">https://github.com/NetHack/NetHack/commit/5d6b3b6f513ac7833e4592aa1583d1c03375b2a2
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/b2fa6292dbb9b6f7f693d07649264656b9354d97">https://github.com/NetHack/NetHack/commit/b2fa6292dbb9b6f7f693d07649264656b9354d97
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/f3def5c0b999478da2d0a8f0b6a7c370a2065f77">https://github.com/NetHack/NetHack/commit/f3def5c0b999478da2d0a8f0b6a7c370a2065f77
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/cdc598e8bdf725eb79265ff9e0e16ae779046b09">https://github.com/NetHack/NetHack/commit/cdc598e8bdf725eb79265ff9e0e16ae779046b09
+</a></li><li><a href="https://github.com/NetHack/NetHack/commit/74de7d31e0a6b3e2ebd852e333fe66d212fd6a90">https://github.com/NetHack/NetHack/commit/74de7d31e0a6b3e2ebd852e333fe66d212fd6a90
+</a></li><li><a href="https://github.com/SFTtech/openage/commit/32e01840810bd35dcda401466ca9804572be3787">https://github.com/SFTtech/openage/commit/32e01840810bd35dcda401466ca9804572be3787
+</a></li><li><a href="https://github.com/yvt/openspades/commit/dd75492b7a27a240f1043d5d8c9b27eb3620af11">https://github.com/yvt/openspades/commit/dd75492b7a27a240f1043d5d8c9b27eb3620af11
+</a></li><li><a href="https://github.com/OpenXcom/OpenXcom/commit/30c0ba4d61d10048a89fea390e8aadf54c0b7b42">https://github.com/OpenXcom/OpenXcom/commit/30c0ba4d61d10048a89fea390e8aadf54c0b7b42
+</a></li><li><a href="https://github.com/SuperTux/supertux/commit/141db2bd416837ed479f7ded62e8e5c72ad4eb84">https://github.com/SuperTux/supertux/commit/141db2bd416837ed479f7ded62e8e5c72ad4eb84
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/1c425eb050753916e513073c0fe024a91a37dcb2">https://github.com/Unvanquished/Unvanquished/commit/1c425eb050753916e513073c0fe024a91a37dcb2
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/f6af16723e6eba9125bcde3f64f30ed9445ba3cc">https://github.com/Unvanquished/Unvanquished/commit/f6af16723e6eba9125bcde3f64f30ed9445ba3cc
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/6f062cc688efd6806991c9025e152197fd9a9e4d">https://github.com/Unvanquished/Unvanquished/commit/6f062cc688efd6806991c9025e152197fd9a9e4d
+</a></li><li><a href="https://github.com/Unvanquished/Unvanquished/commit/d8826b6bca4cbed0f502d2c1462670690ff8aae8">https://github.com/Unvanquished/Unvanquished/commit/d8826b6bca4cbed0f502d2c1462670690ff8aae8
+</a></li><li><a href="https://github.com/Warzone2100/warzone2100/commit/01275997ad7a76a91aa1d9d68a57729cadcee16e">https://github.com/Warzone2100/warzone2100/commit/01275997ad7a76a91aa1d9d68a57729cadcee16e</a></li>
+
+     </ul>
+    </div>
+    <div class="panel panel-info">
+      <div class="panel-heading">Issues</div>
+      <div class="panel-body">9 occurrences</div>
+      <ul>
+<li><a href="https://github.com/lo-th/3d.city/issues/13">https://github.com/lo-th/3d.city/issues/13
+</a></li><li><a href="https://github.com/tizian/Cendric2/issues/214">https://github.com/tizian/Cendric2/issues/214
+</a></li><li><a href="https://github.com/rohit-n/Clonepoint/issues/1">https://github.com/rohit-n/Clonepoint/issues/1
+</a></li><li><a href="https://github.com/fogleman/Craft/issues/206">https://github.com/fogleman/Craft/issues/206
+</a></li><li><a href="https://github.com/fogleman/Craft/issues/152">https://github.com/fogleman/Craft/issues/152
+</a></li><li><a href="https://github.com/particle-clicker/particle-clicker/issues/42">https://github.com/particle-clicker/particle-clicker/issues/42
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/issues/916">https://github.com/RigsOfRods/rigs-of-rods/issues/916
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/issues/905">https://github.com/RigsOfRods/rigs-of-rods/issues/905
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/issues/233">https://github.com/RigsOfRods/rigs-of-rods/issues/233</a></li>
+ 
+  </ul>
+    </div>
+        <div class="panel panel-info">
+      <div class="panel-heading">Pull Requests</div>
+      <div class="panel-body">5 occurrences</div>
+      <ul>
+<li><a href="https://github.com/fogleman/Craft/pull/177">https://github.com/fogleman/Craft/pull/177
+</a></li><li><a href="https://github.com/crawl/crawl/pull/1309">https://github.com/crawl/crawl/pull/1309
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/pull/1028">https://github.com/RigsOfRods/rigs-of-rods/pull/1028
+</a></li><li><a href="https://github.com/RigsOfRods/rigs-of-rods/pull/1017">https://github.com/RigsOfRods/rigs-of-rods/pull/1017
+</a></li><li><a href="https://github.com/KeenSoftwareHouse/SpaceEngineers/pull/552">https://github.com/KeenSoftwareHouse/SpaceEngineers/pull/552</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</body>
+</html>
